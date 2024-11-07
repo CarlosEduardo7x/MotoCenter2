@@ -1,0 +1,43 @@
+.tópicos {
+    background: var(--azul-degrade); /* Fundo em gradiente azul para atratividade */
+    text-align: center; /* Centraliza o texto */
+    padding: 2em 0; /* Aumenta o padding para um visual mais espaçoso */
+    border-radius: 10px; /* Adiciona bordas arredondadas para suavizar a aparência */
+}
+
+.tópicos__titulo {
+    color: var(--branco); /* Cor do título em branco para contraste */
+    font-weight: 700; /* Aumenta o peso da fonte para destaque */
+    font-size: 24px; /* Aumenta o tamanho da fonte do título */
+    margin-bottom: 1em; /* Espaçamento abaixo do título */
+}
+
+.tópicos__lista {
+    display: flex; /* Exibe a lista como flexbox */
+    flex-wrap: wrap; /* Permite que os itens quebrem em várias linhas se necessário */
+    justify-content: center; /* Centraliza os itens na linha */
+    max-width: 1200px; /* Define uma largura máxima para a lista */
+    margin: 0 auto; /* Centraliza a lista dentro do contêiner */
+}
+
+.tópicos__item {
+    margin: 2em 1em; /* Espaçamento entre os itens */
+    flex: 1 1 200px; /* Permite que os itens cresçam e encolham com um tamanho mínimo */
+}
+
+.tópicos__link {
+    color: var(--branco); /* Cor do texto do link em branco para contraste */
+    padding: 1em; /* Espaçamento interno do link */
+    background-color: var(--laranja); /* Fundo do link em laranja */
+    text-decoration: none; /* Remove sublinhado padrão */
+    font-size: 16px; /* Aumenta o tamanho da fonte do link */
+    font-weight: 700; /* Aumenta o peso da fonte do link */
+    border-radius: 5px; /* Arredonda os cantos do botão do link */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves para hover */
+}
+
+.tópicos__link:hover {
+    background-color: var(--branco); /* Muda o fundo para branco ao passar o mouse */
+    color: var(--azul); /* Muda a cor do texto para azul ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de levantar ao passar o mouse */
+}

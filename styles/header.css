@@ -1,0 +1,67 @@
+.cabeçalho {
+    background-color: var(--azul); /* Usar azul para refletir o tema da loja de motos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em; /* Adiciona espaçamento interno para um visual mais agradável */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+.cabeçalho__menu-hamburguer {
+    width: 30px; /* Tamanho ligeiramente maior para melhor visibilidade */
+    height: 30px;
+    display: inline-block;
+    background-image: url("../img/Menu.svg"); /* Ícone do menu */
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer; /* Adiciona cursor de pointer para indicar que é clicável */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 0; /* Remove padding para alinhar melhor com o cabeçalho */
+}
+
+.lista-menu {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    top: 100%;
+    left: 0; /* Alinhar à esquerda */
+    width: 100%; /* Ocupa toda a largura do cabeçalho */
+    background-color: var(--branco); /* Fundo branco para o menu */
+    z-index: 1000; /* Certifica que o menu fique acima de outros elementos */
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block; /* Exibe o menu quando o botão está checado */
+}
+
+.lista-menu__titulo {
+    padding: 1em;
+    background-color: var(--laranja); /* Fundo laranja para o título */
+    color: var(--branco); /* Texto branco para contraste */
+    font-weight: 700; /* Título em negrito */
+}
+
+.lista-menu__item {
+    padding: 1em;
+    transition: background-color 0.3s; /* Transição suave para mudança de fundo */
+}
+
+.lista-menu__item:hover {
+    background-color: var(--azul-degrade); /* Efeito hover com fundo degradê */
+}
+
+.lista-menu__link {
+    text-decoration: none; /* Remove sublinhado */
+    color: var(--azul); /* Cor do texto azul */
+    text-transform: uppercase; /* Texto em maiúsculas */
+}
+
+.container__botao {
+    display: none; /* O botão do menu é oculto */
+}

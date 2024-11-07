@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotoMaster - Sua Loja de Motos</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Esportivas</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Custom</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Scooters</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Trail e Off-road</a>
+        </li>
+      </ul>
+      
+    </div>
+    <div class="container">
+     
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <h2 class="banner__titulo">Encontre sua moto perfeita!</h2>
+    <p class="banner__texto">As melhores motos das marcas mais renomadas, tudo em um só lugar.</p>
+    <input type="search" class="banner__pesquisa" placeholder="Busque por marca ou modelo...">
+  </section>
+
+  <!-- Carrossel de lançamentos -->
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novidades e Lançamentos</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/moto_esportiva.png" alt="Moto Esportiva Yamaha R1"></div>
+        <div class="swiper-slide"><img src="img/moto_custom.png" alt="Moto Custom Harley Davidson"></div>
+        <div class="swiper-slide"><img src="img/moto_hornet.png" alt="Honda Cb600 Hornet"></div>
+        <div class="swiper-slide"><img src="img/moto_trail.png" alt="Moto Trail KTM"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <!-- Card com destaque -->
+  <section class="card">
+    <div class="card__descrição">
+      <div class="descrição">
+        <h3 class="descrição__titulo">Destaque do mês</h3>
+        <h2 class="descrição__titulo-livro">Kawasaki Z900</h2>
+        <p class="descrição__texto">
+          Potência, estilo e performance. A Kawasaki Z900 é perfeita para quem busca emoção nas estradas.
+        </p>
+      </div>
+      <img src="img/kawasaki_z900.png" class="descrição__imagem" alt="Kawasaki Z900">
+    </div>
+    <div class="card__botões">
+      <ul class="botões">
+      </ul>
+      <a href="#" class="botões__ancora">Saiba mais</a>
+    </div>
+  </section>
+
+  <!-- Carrossel de mais vendidos -->
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Mais Vendidas</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/harley_davidson.png" alt="Harley Davidson Iron 883"></div>
+        <div class="swiper-slide"><img src="img/honda_cb650.png" alt="Honda CB 650R"></div>
+        <div class="swiper-slide"><img src="img/suzuki_gsxr.png" alt="Suzuki GSX-R"></div>
+        <div class="swiper-slide"><img src="img/ducati_panigale.png" alt="Ducati Panigale"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <!-- Tópicos visitados recentemente -->
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">Motos Visitadas Recentemente</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Yamaha MT-07</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Honda XRE 300</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Ducati Scrambler</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">BMW GS 1200</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Triumph Tiger 900</a></li>
+    </ul>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="contato">
+    <h2 class="contato__titulo">Receba Ofertas e Novidades</h2>
+    <p class="contato__texto">Cadastre-se para receber promoções exclusivas e novidades sobre as melhores motos do mercado.</p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <!-- Rodapé -->
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">MotoMaster - Sua Loja de Motos</h2>
+    <p class="rodapé__texto">© 2024 MotoMaster. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>

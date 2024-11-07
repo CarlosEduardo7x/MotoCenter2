@@ -1,0 +1,36 @@
+hr {
+    margin: 1em 0; /* Adiciona espaçamento acima e abaixo da linha horizontal */
+    border: 0; /* Remove a borda padrão */
+    height: 1px; /* Define a altura da linha */
+    background-color: var(--azul); /* Cor da linha horizontal que combina com o tema */
+}
+
+.rodapé {
+    background-color: var(--azul); /* Altera o fundo do rodapé para azul para refletir o tema */
+    color: var(--branco); /* Texto em branco para contraste */
+    padding: 2em; /* Aumenta o padding para um visual mais espaçoso */
+    text-align: center; /* Centraliza o texto no rodapé */
+    position: relative; /* Para possibilitar um posicionamento adequado de elementos filhos */
+}
+
+.rodapé__texto {
+    font-size: 14px; /* Tamanho da fonte para o texto do rodapé */
+    font-weight: 400; /* Peso da fonte padrão */
+    margin: 0.5em 0; /* Margem para separar os elementos */
+}
+
+.rodapé__links {
+    margin-top: 1em; /* Espaçamento acima dos links */
+}
+
+.rodapé__link {
+    color: var(--laranja); /* Cor laranja para os links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    margin: 0 0.5em; /* Margem entre os links */
+    transition: color 0.3s; /* Transição suave para mudança de cor */
+}
+
+.rodapé__link:hover {
+    color: var(--branco); /* Muda a cor para branco ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}

@@ -1,0 +1,94 @@
+/* Reset básico com toques para um site de motos */
+
+/* Removendo margens, preenchimentos e bordas padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo uma base de tipografia */
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f4f4; /* Fundo claro para contraste com motos */
+    color: #333; /* Cor neutra para facilitar a leitura */
+}
+
+/* Garantindo que os links e botões tenham estilo uniforme */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input[type="submit"] {
+    background-color: #ff4500; /* Botões com cor forte, estilo esportivo */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #e03e00; /* Efeito hover mais escuro */
+}
+
+input, textarea {
+    font-family: inherit;
+    font-size: 1em;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* Estilo das listas removido, mas com alinhamento personalizado */
+ul, ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Ajustes para imagens */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas para imagens de motos */
+}
+
+/* Estilizando elementos de título para melhor legibilidade */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    color: #222; /* Cor mais escura para títulos */
+}
+
+/* Ajustando tabelas para uso em especificações de motos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Ajustes visuais para seções HTML5 */
+section, article, header, footer, nav, aside {
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Alinhamento central para elementos em containers */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

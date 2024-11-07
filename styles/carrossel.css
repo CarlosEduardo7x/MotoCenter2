@@ -1,0 +1,136 @@
+.carrossel {
+    margin: 2em 0; /* Margem superior e inferior para espaçamento */
+}
+
+.carrossel__titulo {
+    color: var(--laranja); /* Cor vibrante para chamar a atenção */
+    background-color: var(--azul); /* Fundo azul para um contraste forte */
+    text-align: center;
+    text-transform: uppercase; /* Letras maiúsculas para destaque */
+    font-size: 24px; /* Tamanho maior para impacto */
+    font-weight: 800; /* Peso de fonte aumentado para robustez */
+    padding: 1em 0; /* Padding ajustado */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra sutil para dar profundidade */
+}
+
+.swiper {
+    width: 100%; /* Largura total do carrossel */
+    height: 400px; /* Altura padrão do carrossel */
+}
+
+.swiper-slide {
+    display: flex; /* Flex para centralizar o conteúdo */
+    justify-content: center; /* Centraliza as imagens */
+    align-items: center; /* Alinha verticalmente */
+    background-color: var(--branco); /* Fundo branco para contraste com as imagens */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    margin: 0 10px; /* Margem lateral para espaçamento entre slides */
+    transition: transform 0.3s; /* Transição suave ao interagir */
+}
+
+.swiper-slide:hover {
+    transform: scale(1.05); /* Aumenta o slide ao passar o mouse */
+}
+
+.swiper-slide img {
+    width: 90%; /* Imagens ocupando 90% da largura do slide */
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
+    object-fit: cover; /* Ajusta a imagem ao contêiner */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: var(--laranja); /* Cor de fundo laranja para botões de navegação */
+    border-radius: 50%; /* Botões circulares */
+    width: 40px; /* Largura dos botões */
+    height: 40px; /* Altura dos botões */
+    color: var(--branco); /* Texto branco nos botões */
+    font-weight: 700; /* Texto em negrito para destaque */
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: var(--vermelho-moto); /* Muda para vermelho ao passar o mouse */
+}
+
+.swiper-pagination {
+    position: relative; /* Ajuste de posição */
+    margin: 0.5em 0; /* Margem para espaçamento */
+    text-align: center; /* Centralizar a paginação */
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--azul); /* Cor azul para os bullets da paginação */
+    opacity: 0.7; /* Opacidade reduzida */
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--laranja); /* Cor laranja para o bullet ativo */
+    opacity: 1; /* Opacidade total para o bullet ativo */
+}
+
+.card {
+    background: var(--branco); /* Fundo branco para destaque */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25); /* Sombra mais intensa */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 1em; /* Margem externa */
+    padding: 1.5em; /* Aumentar padding para maior conforto visual */
+    transition: transform 0.3s; /* Transição suave ao interagir */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+}
+
+.card__descrição {
+    display: flex;
+    justify-content: space-between; /* Distribuição uniforme entre elementos */
+    margin-bottom: 0.5em; /* Espaçamento inferior */
+}
+
+.card__botões {
+    display: flex;
+    justify-content: center; /* Centralizar os botões */
+}
+
+.botões {
+    display: flex; /* Flex para botões em linha */
+}
+
+.descrição__titulo {
+    color: var(--laranja); /* Laranja para destaque no título */
+    font-weight: 800; /* Peso aumentado para dar ênfase */
+}
+
+.descrição__titulo-livro {
+    color: var(--azul); /* Azul para subtítulo */
+    font-size: 18px; /* Tamanho de fonte aumentado */
+    font-weight: 700; /* Negrito para maior destaque */
+    margin: 0.5em 0; /* Margem para espaçamento */
+}
+
+.descrição__texto {
+    font-size: 14px; /* Tamanho de fonte padrão */
+    color: var(--cinza-escuro); /* Cor escura para texto para melhor legibilidade */
+}
+
+.botões__ancora {
+    background-color: var(--laranja); /* Fundo laranja para botões */
+    padding: 1em 2.2em; /* Padding para conforto */
+    color: var(--branco); /* Texto em branco */
+    font-weight: 700; /* Negrito para destaque */
+    text-decoration: none; /* Sem sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição ao interagir */
+}
+
+.botões__ancora:hover {
+    background-color: var(--vermelho-moto); /* Fundo vermelho ao passar o mouse */
+}
+
+.botões__item {
+    margin: 0 0.5em; /* Margem entre botões */
+}

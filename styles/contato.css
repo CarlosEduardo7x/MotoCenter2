@@ -1,0 +1,58 @@
+.contato {
+    background-color: var(--cor-de-fundo); /* Cor de fundo mais suave */
+    padding: 2em; /* Aumentar o padding para conforto visual */
+    border-radius: 10px; /* Bordas arredondadas para suavizar o visual */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil para dar profundidade */
+    text-align: center; /* Centralizar texto */
+}
+
+.contato__titulo {
+    font-size: 24px; /* Tamanho de fonte maior para maior destaque */
+    font-weight: 700; /* Negrito para o título */
+    color: var(--azul); /* Cor azul para o título */
+    margin-bottom: 0.5em; /* Espaçamento inferior */
+}
+
+.contato__texto {
+    font-size: 16px; /* Tamanho de fonte padronizado */
+    font-weight: 400; /* Peso regular para o texto */
+    margin: 1em 0; /* Margem para espaçamento */
+    color: var(--azul); /* Cor azul para o texto */
+}
+
+.contato__email {
+    padding: 1em; /* Padding interno para o campo de email */
+    border: 2px solid var(--laranja); /* Borda laranja para destaque */
+    border-radius: 24px; /* Bordas arredondadas para o campo */
+    width: 90%; /* Largura do campo de email */
+    margin: 0 auto; /* Centralizar o campo na página */
+    color: var(--azul); /* Texto azul */
+    font-size: 16px; /* Tamanho de fonte para o campo */
+    transition: border-color 0.3s; /* Transição suave para mudança de cor */
+}
+
+.contato__email::placeholder {
+    font-family: var(--fonte-principal); /* Fonte principal */
+    color: var(--azul); /* Cor do texto de placeholder */
+}
+
+.contato__email:focus {
+    border-color: var(--azul); /* Muda a borda para azul ao focar */
+    outline: none; /* Remove contorno padrão do navegador */
+}
+
+.contato__botao {
+    background-color: var(--laranja); /* Fundo laranja para o botão */
+    padding: 1em 2em; /* Padding para o botão */
+    color: var(--branco); /* Texto em branco */
+    font-weight: 700; /* Negrito para maior destaque */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    display: inline-block; /* Para permitir margens e tamanhos */
+    margin: 1em auto; /* Margem centralizada */
+    transition: background-color 0.3s; /* Transição suave para mudança de cor */
+}
+
+.contato__botao:hover {
+    background-color: var(--azul); /* Muda para azul ao passar o mouse */
+}

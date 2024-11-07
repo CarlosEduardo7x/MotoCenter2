@@ -1,0 +1,53 @@
+.banner {
+    background: var(--degrade-preto-vermelho); /* Degradê que passa do preto ao vermelho, reforçando a energia e velocidade */
+    color: var(--branco); /* Texto em branco para contraste e legibilidade */
+    text-align: center;
+    padding: 3em 2em;
+    border-radius: 10px; /* Bordas suavemente arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade ao banner */
+}
+
+.banner__titulo {
+    font-size: 28px; /* Título grande e chamativo */
+    font-weight: 800; /* Negrito reforçado para dar robustez */
+    text-transform: uppercase; /* Maiúsculas para um visual impactante */
+    letter-spacing: 2px; /* Espaçamento entre letras para um estilo mais agressivo */
+    color: var(--vermelho-moto); /* Cor vermelha para realçar o título */
+}
+
+.banner__texto {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 1.5em 0;
+    color: var(--cinza-claro); /* Texto com cinza claro, remetendo a um toque metálico */
+}
+
+.banner__pesquisa {
+    background-color: transparent;
+    border: 2px solid var(--vermelho-moto); /* Borda vermelha para combinar com o tema da loja */
+    color: var(--branco);
+    border-radius: 30px; /* Bordas bem arredondadas para suavizar */
+    padding: 1em;
+    width: 100%;
+    max-width: 600px; /* Largura máxima ajustada */
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Transição suave ao interagir com o campo */
+}
+
+.banner__pesquisa:hover {
+    border-color: var(--branco); /* Muda a cor da borda ao passar o mouse */
+    background-color: var(--vermelho-moto); /* Fundo vermelho ao passar o mouse */
+}
+
+.banner__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--branco);
+    background: url("../img/Lupa.svg") no-repeat;
+    background-position: 1em;
+    background-size: 18px; /* Tamanho da lupa ajustado para combinar com o tema */
+}
